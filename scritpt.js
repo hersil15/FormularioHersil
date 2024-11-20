@@ -62,14 +62,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Función para validar la contraseña y su confirmación
   function validarContrasenas() {
-      const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!$-_.]).{4,10}$/;
+      const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>]).{4,10}$/;
       const mensajeErrorPassword = password.nextElementSibling;
       const mensajeErrorConfirmPassword = confirmPassword.nextElementSibling;
 
       let isValid = true;
 
       if (!passwordRegex.test(password.value.trim())) {
-          mensajeErrorPassword.textContent = "La contraseña debe tener entre 4 y 10 caracteres, incluyendo letras, números y caracteres especiales.";
+          mensajeErrorPassword.textContent = "La contraseña debe tener entre 4 y 10 caracteres, incluyendo letras mayúsculas, minúsculas, números y caracteres especiales.";
           isValid = false;
       } else {
           mensajeErrorPassword.textContent = "";
