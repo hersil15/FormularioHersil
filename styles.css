@@ -1,0 +1,72 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1E90FF; /* Azul más intenso */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor del formulario */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Estilos de encabezado */
+h1 {
+  color: #ecdad3; /* Naranja */
+  margin-bottom: 20px;
+}
+
+/* Estilos de entrada y botones */
+input, button {
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos de input al pasar el mouse */
+input:hover {
+  border-color: #ff4500; /* Naranja */
+}
+
+/* Estilos de botones */
+button {
+  background-color: #ff4500; /* Naranja */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos de botón al pasar el mouse */
+button:hover {
+  background-color: #1E90FF; /* Azul más intenso */
+  color: #ff4500; /* Naranja */
+}
+
+/* Estilos de mensajes de error */
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+}
